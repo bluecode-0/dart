@@ -1,0 +1,127 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="description" content="Introduction to Flutter framework for Dart.">
+  <meta name="author" content="Liviu Ditoiu">
+  <meta name="keywords" content="sage, code, flutter">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website title -->
+  <title>Basics</title>
+
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="icon" type="image/png"  href="../../images/favicon.ico">
+  <!-- Prism Highlighter -->
+  <link rel="stylesheet" href="../../prism.css">
+  <script src="../../prism.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../../sage.css">
+  
+
+
+
+  </head>
+<body>
+
+<div class="container">
+
+<!-- header -->
+<div class="row">
+    <div class="col">
+        <a href="https://sagecode.net"><img src="../../images/sage-logo.svg" alt="Sage-Code Laboratory" height="80"/></a>
+    </div>
+    <div class="col  bottom-right">
+        <a href="../flutter.html">flutter ←</a>
+    </div>
+</div><hr>
+
+<h1>Basics </h1> 
+<span style="color: purple; ">Installing Flutter</span>
+
+
+<div class="alert alert-secondary shadow-sm">
+Key concepts for beginners:
+
+</div>
+<h3>Install Flutter on Windows</h3>
+<p>Steps to install Flutter SDK on Windows</p>
+
+<ol>
+<li>
+  You go to the address, <a href="https://flutter.dev/docs/get-started/install/windows">https://flutter.dev/docs/get-started/install/windows </a> and download the latest version of Flutter SDK. 
+</li>
+<li>
+  Extract to any folder for example D:\flutter\
+</li>
+<li>
+  Update system path for folder flutter\bin. In the Start search bar, type 'env' then select Edit environment variables for your account. Under User variables, check if you see the Path: box, then add the full path of the flutter\bin folder using use semicolon (;) to separate from other variables.
+</li>
+<li>
+  Flutter provides a tool called  "flutter doctor"  to check all the necessary requirements for the Flutter development environment.
+  Run "flutter doctor" using CMD utility.
+</li>
+
+<li>
+  You run the command above so that the system checks and gives the following report
+  Doctor summary (to see all details, run flutter doctor -v):
+  [√] Flutter (Channel stable, v1.2.1, on Microsoft Windows [Version
+  10.0.17134.706], locale en-US)
+  [√] Android toolchain - develop for Android devices (Android SDK version
+  28.0.3)
+  [√] Android Studio (version 3.2)
+  [√] VS Code, 64-bit edition (version 1.29.1)
+  [!] Connected device
+  ! No devices available
+  ! Doctor found issues in 1 category.
+  As mentioned above, we can see that Flutter SDK is installed, Android Tool is installed, Android Stuido is installed, there is no connection to the device, you need to connect the phone device via USB or turn on the virtual machine
+  
+</li>
+<li>
+  Install the latest Android SDK if you don't already have it installed and warned by flutter doctor
+</li>
+<li>
+  Install latest Android Studio if you don't have it installed and warned
+</li>
+<li>
+  Turn on android emulator or connect to an Android device
+</li>
+<li>
+
+  Install Flutter and Dart plugins for Android Studio. These two plugins will provide templates for creating Flutter apps and options to run and debug Flutter apps on Android studio.
+  Open Android Studio.
+  Choose File → Settings → Plugins.
+  Search for the Flutter plugin and click Install.
+  Select Yes when the system asks to install Dart plugin.
+  Restart Android studio.
+</li>
+
+
+
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+<p><b>Back to:</b>
+<a href="flutter.html">Flutter index</a></p>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-copyright text-center"></div>
+</footer>
+</div>
+
+<script src="/js/rainbow-custom.min.js"></script>
+</body>
+</html>
