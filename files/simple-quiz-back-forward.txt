@@ -405,3 +405,4 @@ class Solutions {
   String sol3;
   Solutions(this.sol0, this.sol1, this.sol2, this.sol3);
 }
+//https://stackoverflow.com/questions/66835173/how-to-change-background-color-of-elevated-button-in-flutter-from-function
