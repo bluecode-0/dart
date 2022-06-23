@@ -23,6 +23,8 @@ class _MyAppState extends State<MyApp> {
   var n = 0;
   String result = "";
 
+  bool _flag = true;
+
   List queList = [
     Questions(
         "1. Does Canada have a larger land area, excluding water, than the US?",
@@ -186,11 +188,13 @@ class _MyAppState extends State<MyApp> {
 
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.purple,
+                    primary: _flag ? Colors.purple : Colors.amber,
                     minimumSize: const Size.fromHeight(40), // NEW
                   ),
                   onPressed: buttonenabled
                       ? () {
+                          _flag = !_flag;
+
                           checkAnswer(listSolutions[n].sol2);
 
                           calculateScore();
@@ -405,4 +409,3 @@ class Solutions {
   String sol3;
   Solutions(this.sol0, this.sol1, this.sol2, this.sol3);
 }
-//https://stackoverflow.com/questions/66835173/how-to-change-background-color-of-elevated-button-in-flutter-from-function
