@@ -290,24 +290,24 @@ class _MyAppState extends State<MyApp> {
                   OutlinedButton(
                     onPressed: () {
                       setState(() {
-                        print("back to ${n + 1} ");
-
-                        result = "";
                         buttonenabled = true;
-                        // answer[n] = 0;
-
-                        if (completed == false) {
-                          if (n > 0) {
-                            n = n - 1;
-                            //     answer[n] = 0;
-                          }
-                        }
-
-                        calculateScore();
-                        printScore();
-
-                        completed = false;
                       });
+
+                      print("back to ${n + 1} ");
+                      result = "";
+                      // answer[n] = 0;
+
+                      if (completed == false) {
+                        if (n > 0) {
+                          n = n - 1;
+                          //     answer[n] = 0;
+                        }
+                      }
+
+                      calculateScore();
+                      printScore();
+
+                      completed = false;
                     },
                     style: OutlinedButton.styleFrom(
                       padding: EdgeInsets.all(20),
@@ -323,8 +323,6 @@ class _MyAppState extends State<MyApp> {
                   OutlinedButton(
                     onPressed: () {
                       setState(() {
-                        print("forward to ${n + 1} ");
-
                         if (n < queList.length - 1) {
                           n = n + 1;
                           //   answer[n] = 0;
@@ -334,10 +332,10 @@ class _MyAppState extends State<MyApp> {
                           buttonenabled = false;
                           print("completed: $score points");
                         }
-
-                        calculateScore();
-                        printScore();
                       });
+                      print("forward to ${n + 1} ");
+                      calculateScore();
+                      printScore();
                     },
                     style: OutlinedButton.styleFrom(
                       padding: EdgeInsets.all(20),
@@ -404,3 +402,4 @@ class Solutions {
   String sol3;
   Solutions(this.sol0, this.sol1, this.sol2, this.sol3);
 }
+
