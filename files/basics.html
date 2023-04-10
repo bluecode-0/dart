@@ -38,78 +38,98 @@
 </div><hr>
 
 <h1>Basics </h1> 
-<span style="color: purple; ">Installing Flutter</span>
 
+<!--
+<span style="color: purple; ">Installing Flutter</span>
+-->
 
 <div class="alert alert-secondary shadow-sm">
 Key concepts for beginners:
+<ul>
+<li>
+  Material App: A type of app in Flutter that follows the Material Design guidelines, which is a set of design principles and guidelines created by Google. A Material App uses a set of pre-defined widgets, icons, and colors that give the app a consistent look and feel across different devices and platforms. Material Design is focused on creating a visually appealing and intuitive user interface that is easy to use and navigate. Material Apps typically have a toolbar at the top, a drawer for navigation, and use various widgets such as buttons, cards, and lists to display content. Material Apps are a great way to quickly create a professional-looking app that follows industry-standard design guidelines.
+
+</li>
+
+
+
+  <li>Widgets: Everything in Flutter is a widget, from the basic building blocks like text and buttons to more complex ones like layouts and animations.</li>
+  
+  <li>State: In Flutter, state refers to the data that can change over time and affect how the UI is rendered. There are two types of state: ephemeral state, which is local to a widget and only lasts as long as the widget is on screen, and app state, which is global to the entire app and can last across multiple screens.</li>
+  <li>
+    Stateless Widget: A type of widget that represents part of a UI that does not change dynamically based on user interaction or other external factors. A Stateless Widget is immutable, which means that once it is created, its properties cannot be changed. Stateless Widgets are commonly used to display static content, such as text, images, or icons. They are simple and efficient because they do not have to manage their own state, which can help improve the performance of the app. Since they are immutable, Stateless Widgets can be easily reused throughout an app, making it easier to create a consistent look and feel across multiple screens. Overall, Stateless Widgets are a key building block in Flutter that allow developers to create efficient and scalable apps
+  </li>
+<li>
+  Stateful Widget: A type of widget that represents part of a UI that can change dynamically based on user interaction or other external factors. A Stateful Widget maintains its own mutable state, which can be updated over time. For example, a button that changes color when it is pressed would be implemented as a Stateful Widget. Stateful Widgets are commonly used to manage user input, display dynamic content, and handle animations. When the state of a Stateful Widget changes, the Flutter framework rebuilds the widget, which updates its appearance on the screen. This makes Stateful Widgets a powerful tool for creating interactive and responsive user interfaces. However, because they manage their own state, Stateful Widgets can be more complex than Stateless Widgets and require more careful management to ensure that they function correctly. Overall, Stateful Widgets are a crucial part of Flutter that enable developers to create dynamic and engaging apps.
+
+</li>
+
+<li>
+
+  Scaffold Widget: A pre-built widget that provides a basic framework for creating an app layout. It includes a standard app bar at the top of the screen, a floating action button at the bottom right, and a body area where other widgets can be placed. The Scaffold Widget is commonly used as the top-level widget in a Flutter app, providing a consistent and predictable user interface. The app bar provided by the Scaffold Widget can be customized with icons, titles, and other widgets, and can be used to navigate between screens, search for content, or display settings. The floating action button is typically used to trigger a primary action, such as creating a new item or submitting a form. The body area of the Scaffold Widget can contain any other widget or combination of widgets, such as text, images, lists, or forms. The Scaffold Widget is highly customizable and can be extended or modified to fit the specific needs of a particular app. Overall, the Scaffold Widget is a useful and flexible tool that makes it easy to create a basic app layout in Flutter.
+
+
+</li>
+
+  <li>Layout: Flutter provides a rich set of layout widgets that allow you to position and size your UI elements in various ways, such as columns, rows, stacks, and more.</li>
+  
+  <li>Navigation: Flutter offers a powerful navigation system that allows you to move between different screens in your app using a variety of techniques, such as push and pop navigation, drawer navigation, and tab navigation.</li>
+  
+  <li>Themes: With Flutter, you can easily create a consistent look and feel for your app using themes. A theme defines the visual properties of your app, such as colors, fonts, and shapes, and can be applied globally to all widgets in your app.</li>
+  
+  <li>Animation: Flutter has a built-in animation framework that makes it easy to create complex animations and transitions. You can animate any property of any widget using various animation classes provided by the framework.</li>
+  
+  <li>Gestures: Flutter provides a set of gesture detectors that allow you to respond to user input, such as taps, swipes, and scrolls. You can use these detectors to create interactive UI elements like buttons, sliders, and more.</li>
+  
+  <li>Asynchronous programming: Flutter is designed to handle asynchronous programming with ease. It uses the async/await syntax to simplify working with asynchronous operations, such as fetching data from a server or performing a time-consuming task.</li>
+  
+  <li>Packages: Flutter has a rich ecosystem of packages that provide additional functionality to your app. You can easily add these packages to your app using the pubspec.yaml file, which manages dependencies.</li>
+  
+  <li>Hot reload: One of the most powerful features of Flutter is hot reload, which allows you to quickly make changes to your app's code and see the results instantly, without having to recompile and restart the app. This makes development much faster and more efficient.</li>
+  </ul>
 
 </div>
 <h3>Install Flutter on Windows</h3>
-<p>Steps to install Flutter SDK on Windows</p>
+<p>Steps to install Flutter SDK on Windows:</p>
 
 <ol>
-<li>
-  You go to the address, <a href="https://flutter.dev/docs/get-started/install/windows">https://flutter.dev/docs/get-started/install/windows </a> and download the latest version of Flutter SDK. 
-</li>
-<li>
-  Extract to any folder for example D:\flutter\
-</li>
-<li>
-  Update system path for folder flutter\bin. In the Start search bar, type 'env' then select Edit environment variables for your account. Under User variables, check if you see the Path: box, then add the full path of the flutter\bin folder using use semicolon (;) to separate from other variables.
-</li>
-<li>
-  Flutter provides a tool called  "flutter doctor"  to check all the necessary requirements for the Flutter development environment.
-  Run "flutter doctor" using CMD utility.
-</li>
-
-<li>
-  You run the command above so that the system checks and gives the following report
-  Doctor summary (to see all details, run flutter doctor -v):
-  [√] Flutter (Channel stable, v1.2.1, on Microsoft Windows [Version
-  10.0.17134.706], locale en-US)
-  [√] Android toolchain - develop for Android devices (Android SDK version
-  28.0.3)
-  [√] Android Studio (version 3.2)
-  [√] VS Code, 64-bit edition (version 1.29.1)
-  [!] Connected device
-  ! No devices available
-  ! Doctor found issues in 1 category.
-  As mentioned above, we can see that Flutter SDK is installed, Android Tool is installed, Android Stuido is installed, there is no connection to the device, you need to connect the phone device via USB or turn on the virtual machine
+  <li>First, download and install the latest version of the Flutter SDK for Windows from the official Flutter website <a href="https://flutter.dev/docs/get-started/install/windows">  https://flutter.dev/docs/get-started/install/windows</a>.</li>
+  <li>Once the download is complete, extract the zip file to a suitable location on your computer.</li>
+  <li>Next, add the path to the Flutter SDK to your system environment variables. To do this, open the Control Panel, go to System and Security, then click on System. Click on Advanced System Settings, then click on Environment Variables. Under System Variables, click on New and add a new variable named "Flutter" with the value of the path to the Flutter SDK.</li>
+  <li>Next, download and install the latest version of Android Studio from the official website (https://developer.android.com/studio/).</li>
+  <li>Open Android Studio and click on the Configure menu, then select the SDK Manager. Under the SDK Platforms tab, make sure that Android 11 (R) is installed. Under the SDK Tools tab, make sure that Android SDK Build-Tools, Android Emulator, and Android SDK Platform-Tools are installed.</li>
+  <li>After installing the necessary tools, open a terminal or command prompt and type "flutter doctor" to check if everything is set up correctly. If there are any issues, the "flutter doctor" command, explained bellow, will provide suggestions on how to fix them.</li>
+  <li>Finally, you can start creating Flutter apps on Windows by using Android Studio or any other code editor that supports Flutter development.</li>
   
-</li>
-<li>
-  Install the latest Android SDK if you don't already have it installed and warned by flutter doctor
-</li>
-<li>
-  Install latest Android Studio if you don't have it installed and warned
-</li>
-<li>
-  Turn on android emulator or connect to an Android device
-</li>
-<li>
+   </ol>
+  That's it! You have successfully installed Flutter on Windows and are ready to start building awesome apps.
+ 
+  
+  <Br><br>
+  In Flutter <b>"flutter doctor"</b> is a command-line tool that is used to diagnose and troubleshoot issues with your Flutter environment. Here are the steps to use "flutter doctor":
 
-  Install Flutter and Dart plugins for Android Studio. These two plugins will provide templates for creating Flutter apps and options to run and debug Flutter apps on Android studio.
-  Open Android Studio.
-  Choose File → Settings → Plugins.
-  Search for the Flutter plugin and click Install.
-  Select Yes when the system asks to install Dart plugin.
-  Restart Android studio.
-</li>
-
-
-
-</ol>
-
-
-
-
-
-
-
-
-
-
+  <ul>
+    <li>Open a terminal or command prompt on your computer.</li>
+    <li>Type "flutter doctor" and press enter. This will start the "flutter doctor" command, which will check your Flutter environment for any issues or missing dependencies.</li>
+    <li>The output of the "flutter doctor" command will show you the status of your Flutter installation, as well as any issues that need to be addressed. If everything is working correctly, the output will look like this:</li>
+    </ul>
+    
+    
+<pre><code class="language-dart line-numbers">Doctor summary (to see all details, run flutter doctor -v):  
+  [✓] Flutter (Channel stable, version 2.8.1, ...)
+  [✓] Android toolchain - develop for Android devices (Android SDK version 31.0.0)
+  [✓] Chrome - develop for the web
+  [✓] Visual Studio - develop for Windows (Visual Studio Community 2019 16.11.5)
+  [✓] Android Studio (version 2021.1)
+  [✓] IntelliJ IDEA Community Edition (version 2021.2)
+  [✓] VS Code (version 1.63.2)
+  [✓] Connected device (1 available)</code></pre>
+    
+<ul>
+<li>If there are any issues or missing dependencies, the "flutter doctor" command will provide suggestions on how to fix them. For example, if the command detects that the Android SDK is not installed, it will provide instructions on how to install it.</li>
+<li>Once you have addressed any issues or missing dependencies, run "flutter doctor" again to ensure that everything is working correctly.</li>
+</ul>
+That's it! By using the "flutter doctor" command, you can quickly diagnose and troubleshoot any issues with your Flutter environment, ensuring that your app development process is smooth and efficient.
 
 <hr>
 
